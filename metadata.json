@@ -1,0 +1,6 @@
+{
+  "name": "Analista Financeiro de Balancetes",
+  "description": "Uma ferramenta completa para extrair dados contábeis de balancetes em PDF, validar o Balanço, calcular indicadores financeiros de liquidez, rentabilidade e endividamento, e gerar um memorando de análise executiva com mapa de riscos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
