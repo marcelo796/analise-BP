@@ -4,7 +4,6 @@ import fs from "fs";
 import os from "os";
 import dotenv from "dotenv";
 import { GoogleGenAI, Type } from "@google/genai";
-import { createServer as createViteServer } from "vite";
 import * as XLSX from "xlsx";
 
 dotenv.config();
@@ -1029,6 +1028,7 @@ Regras importantes de redação:
 // Serve Frontend using Vite in development, or compiled static files in production
 async function setupServer() {
   if (process.env.NODE_ENV !== "production") {
+    const { createServer: createViteServer } = await import("vite");
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
